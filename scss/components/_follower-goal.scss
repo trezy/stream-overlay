@@ -1,0 +1,33 @@
+.stream-follower-goal {
+  margin-top: auto;
+
+  .follower-counts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .progress-container{
+    position: relative;
+    
+    .nes-progress {
+      display: block;
+    }
+
+    .current-follower-count,
+    .goal-follower-count {
+      margin: 0 0.5em;
+      mix-blend-mode: difference;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .current-follower-count {
+      left: 0;
+    }
+
+    .goal-follower-count {
+      right: 0;
+    }
+  }
+}
